@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Сервис учёта студентов</title>
+  <meta name="description"
+        value="Система Учёта Студентов Учебного Заведения" />
+
+  <!-- Include Styles -->
+  <link rel= "stylesheet"
+      href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <!-- Start container-->
+  <div class="container">
+
+    <!-- Start Header-->
+    <div class="row" id="header">
+
+    <!-- Logo-->
+    <div class="col-xs-8">
+      <h1>Сервис учета студентов</h1>
+    </div>
+
+    <!-- Groups selector-->
+    <div class="col-xs-4" id="group-selector">
+      <strong>Группа:</strong>
+      <select>
+        <option value="">Все студенты</option>
+
+        <option value="">ФР-11, Тарашкевич Леся(№28)</option>
+        <option value="">ФР-11, Тарашкевич Артем(№18)</option>
+      </select>
+    </div>
+  </div>
+  <!-- End header-->
+
+  <!-- Start subheader-->
+  <div class="row" id="sub-header">
+    <div class="col-xs-12">
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#">Студенты</a></li>
+        <li role="presentation"><a href="#">Посещаемость</a></li>
+        <li role="presentation"><a href="#">Группы</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end subheader-->
+
+  <!-- Start main-page-contain-->
+  <div class="row" id="content-columns">
+    <div class="col-xs-12" id="content-column">
+      <!--status message-->
+      <div class="alert alert-warning">изменения отменены</div>
+      <h2>База студентов</h2>
+      <a class="btn btn-primary" href="#">Добавить студента</a>
+
+     <!--Start students listing-->
+     <table class="table table-hover table-striped"
+     <table>
+       <thead>
+         <tr>
+           <th><a href="">№</a></th>
+           <th>фото</th>
+           <th><a href="">фамилия &uarr;</a></th>
+           <th><a href="">имя</a></th>
+           <th><a href="">№ билета</a></th>
+           <th><a href="">действия</a></th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>1</td>
+           <td><img height="35" width = "30" class="img-circle" src="./img/2.jpg"</td>
+           <td><a href="">Тарашкевич</a></td>
+           <td><a href="">Леся</a></td>
+           <td>2123</td>
+           <td><div class="dropdown">
+           <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+             Действие
+           <span class="caret"></span>
+           </button>
+           <ul class="dropdown-menu" role="menu">
+           <li role="presentation">
+           <a role="menuitem" tabindex="-1" href="#">
+             Редактировать
+           </a>
+           </li>
+           <li role="presentation">
+           <a role="menuitem" tabindex="-1" href="#">
+             Удалить
+            </a>
+            </li>
+            </ul>
+            </div>
+           </td>
+          </tr>
+
+           <!--второй студент-->
+         <tr>
+           <td>2</td>
+           <td><img height="35" width = "30" class="img-circle" src="./img/1.jpg"</td>
+           <td><a href="">Тарашкевич</a></td>
+           <td><a href="">Артем</a></td>
+           <td>2123</td>
+           <td><div class="dropdown">
+           <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+             Действие
+           <span class="caret"></span>
+           </button>
+           <ul class="dropdown-menu" role="menu">
+           <li role="presentation">
+           <a role="menuitem" tabindex="-1" href="#">
+             Редактировать
+           </a>
+           </li>
+           <li role="presentation">
+           <a role="menuitem" tabindex="-1" href="#">
+             Удалить
+            </a>
+            </li>
+            </ul>
+            </div>
+           </td>
+
+         </tr>
+       </tbody>
+     </table>
+     <nav>
+     <ul class="pagination">
+       <li><a href="#">&laquo;</a></li>
+       <li><a href="#">1</a></li>
+       <li class="active"><a href="#">2</a></li>
+       <li><a href="#">3</a></li>
+       <li><a href="#">4</a></li>
+       <li><a href="#">5</a></li>
+       <li><a href="#">&raquo;</a></li>
+     </ul>
+    </nav>
+
+             <!--end students listing-->
+
+
+      <!--status message-->
+      <div class="alert alert-warning">изменения отменено.</div>
+    </div>
+  </div>
+  <!-- End main-page-contain-->
+
+  <!-- Start footer-->
+  <div class="row" id="footer">
+    <div class="col-xs-12">
+      &copy; 2016 сервис учета студентов
+    </div>
+  </div>
+  <!-- end footer-->
+
+</div>
+<!-- end container-->
+
+     <!--Javascripts Section-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js">
+    </script>
+    <script src= "https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js">
+    </script>
+  </body>
+
+</html>
+
+
